@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>snap</h1>
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav id="primary-navigation" data-visible="false" class="flexy">
+      <ul class="primary-navigation flex">
+        <li>
+          <a class="dropdown" href="#">Features</a>
+          <ul class="dropdown-content collapse">
+            <li><img src="/images/icon-todo.svg" alt="icon-todo">Todo List</li>
+            <li><img src="/images/icon-calendar.svg" alt="icon-calendar">Calender</li>
+            <li><img src="/images/icon-reminders.svg" alt="icon-reminders">Reminders</li>
+            <li><img src="/images/icon-planning.svg" alt="icon-planning">Planning</li>
+          </ul>
+        </li>
+        <li>
+          <a class="dropdown" href="#">Company</a>
+          <ul class="dropdown-content collapse">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul class="flex-two">
+        <li><button class="login">Login</button></li>
+        <li><button class="register">Register</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div>
+    <img class="img" src="/images/image-hero-mobile.png" alt="Mobile image">
+
+    <img class="img-desktop" src="/images/image-hero-desktop.png" alt="">
+
+  </div>
+
+  <article>
+    <h2>Make remote work</h2>
+    <p>Get your team in sync, no matter your location.<br> Streamline processes,
+      create<br> team rituals, and watch productivity soar.</p>
+  </article>
+
+  <button class="learn-btn">Learn more</button>
+
+  <div class="weblinks">
+    <img src="/images/client-databiz.svg" alt="databiz">
+    <img src="/images/client-audiophile.svg" alt="client-audiophile">
+    <img src="/images/client-meet.svg" alt="client-meet">
+    <img src="/images/client-maker.svg" alt="client-maker">
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
